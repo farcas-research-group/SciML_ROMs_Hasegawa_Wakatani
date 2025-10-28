@@ -1,5 +1,5 @@
-from op_inf_lib.data_proc import *
-from op_inf_lib.postproc import *
+from opinf_for_hw.data_proc import *
+from opinf_for_hw.postproc import *
 
 from config.HW import *
 

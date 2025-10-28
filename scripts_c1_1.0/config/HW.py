@@ -1,7 +1,7 @@
 import numpy as np
 import traceback
 import os
-from op_inf_lib.utils import *
+from opinf_for_hw.utils import *
 
 
 # normalization

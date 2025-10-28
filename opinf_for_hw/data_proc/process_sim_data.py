@@ -1,5 +1,5 @@
-from op_inf_lib.data_proc._basics import *
-from op_inf_lib.data_proc.gems_lifting import *
+from ._basics import *
+from .gems_lifting import *
 
 
 def read_raw_snapshots(

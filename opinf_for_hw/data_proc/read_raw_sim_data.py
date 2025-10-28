@@ -1,4 +1,4 @@
-from op_inf_lib.data_proc._basics import *
+from ._basics import *
 
 
 # get snapshot matrix

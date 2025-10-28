@@ -1,5 +1,5 @@
 import numpy as np
-from op_inf_lib.utils import *
+from ..utils import *
 from scipy.optimize import broyden1
 
 
@@ -114,16 +114,3 @@ def backwardEuler_AFC(A, F, C, u0, t):
         g = lambda y: y - u[:, i] - dt * (np.dot(A, y) + np.dot(F, get_x_sq(y)) + C)
 
     return u
-
-
-# test the integrators on something simple
-# f = lambda u,t: -u
-
-# dt = 0.1
-# t = np.arange(0,1,dt)
-# u0 = np.array([[1]])
-
-# uF = forwardEuler(f,u0,t)
-# uR = rk2(f,u0,t)
-# uB = backwardEuler(f,u0,t)
-# uC = crankNicolson(f,u0,t)
