@@ -5,9 +5,8 @@ import xarray as xr
 
 from config.HW import *
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    data = np.load(POD_file)
+    Vr = data["Vr"][:, :8]
 
-	data 	= np.load(POD_file)
-	Vr 		= data['Vr'][:, :8]
-
-	np.save('results/Vr.npy', Vr)
+    np.save("results/Vr.npy", Vr)

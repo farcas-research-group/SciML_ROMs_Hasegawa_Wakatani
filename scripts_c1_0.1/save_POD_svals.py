@@ -3,10 +3,9 @@ from op_inf_lib.postproc import *
 
 from config.HW import *
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    temp = np.load(POD_file)
+    S = temp["S"]
+    temp = 0
 
-	temp 	= np.load(POD_file)
-	S       = temp['S']
-	temp    = 0
-
-	np.save('results/POD_svals.npy', S)
+    np.save("results/POD_svals.npy", S)
