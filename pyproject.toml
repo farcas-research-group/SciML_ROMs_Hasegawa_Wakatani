@@ -1,0 +1,42 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[project]
+authors = [
+  { email = "constantin.gahr@ipp.mpg.de", name = "Constantin Gahr" },
+  { email = "frank.jenko@ipp.mpg.de", name = "Frank Jenko" },
+  { email = "ionut.farcas@austin.utexas.edu", name = "Ionut Farcas" },
+]
+classifiers = [
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "h5netcdf",
+  "numpy>=1.20",
+  "pytecplot",
+  "scikit-learn",
+  "latexplotlib",
+]
+description = "Learning physics-based reduced models from data for the Hasegawa-Wakatani equations"
+keywords = [
+  "operator-inference",
+  "plasma-turbulence",
+  "python",
+  "reduced-order-models",
+  "rom",
+  "turbulence",
+]
+license = { text = "MIT" }
+name = "opinf_for_hw"
+readme = "README.md"
+requires-python = ">=3.9"
+version = "0.0.1"
+
+[project.optional-dependencies]
+tests = ["ruff"]
