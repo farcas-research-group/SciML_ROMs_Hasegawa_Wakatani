@@ -18,10 +18,13 @@ classifiers = [
 ]
 dependencies = [
   "h5netcdf",
+  "latexplotlib",
+  "matplotlib",
   "numpy>=1.20",
+  "pot",
   "pytecplot",
   "scikit-learn",
-  "latexplotlib",
+  "xarray",
 ]
 description = "Learning physics-based reduced models from data for the Hasegawa-Wakatani equations"
 keywords = [
